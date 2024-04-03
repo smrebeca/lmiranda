@@ -14,10 +14,10 @@ img {
 
 /* Header styles */
 header {
-    background: url('images/ciclo_biodiversidade_LSM.jpg') no-repeat center center;
+    background: url('images/ciclo_biodiversidade_LSM_cropped.jpg') no-repeat center center;
     background-size: cover;
     width: 100%;
-    min-height: 100vh; /* Adjust the min-height as needed */
+    min-height: 50vh; /* Adjust the min-height as needed */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,13 +28,13 @@ header {
     text-align: center;
 }
 
-header img {
-    max-width: 200px; /* Adjust the width as needed */
-    height: auto; /* This maintains the aspect ratio */
-    border-radius: 50%; /* Creates a circular profile photo */
-    border: 4px solid #fff; /* Optional: adds a white border around the photo */
-    margin-bottom: 20px; /* Spacing between the photo and the text */
-}
+/*header img {
+/*    max-width: 200px; /* Adjust the width as needed */
+/*    height: auto; /* This maintains the aspect ratio */
+/*    border-radius: 50%; /* Creates a circular profile photo */
+/*    border: 4px solid #fff; /* Optional: adds a white border around the photo */
+/*    margin-bottom: 20px; /* Spacing between the photo and the text */
+/*}
 
 /* Navigation menu styles */
 nav ul {
@@ -70,7 +70,41 @@ section {
     margin-bottom: 20px;
 }
 
+/* About Me Section styles, including the profile photo */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    text-align: justify; /* Justify the text */
+    padding: 0 20px; /* Add padding to give some space on the sides */
+}
+
+.profile-photo {
+    max-width: 200px; /* Adjust the width as needed */
+    height: auto; /* This maintains the aspect ratio */
+    border-radius: 20%; /* Creates a circular profile photo */
+    border: 4px solid #fff; /* Optional: adds a white border around the photo */
+    margin-bottom: 20px; /* Spacing between the photo and the text */
+}
+
+#about h2 {
+    text-align: center; /* Keep the heading centered */
+}
+
+/* Style for the content of About Me section */
+#about p {
+    margin-bottom: 15px; /* Add or adjust the margin as needed */
+}
+
 /* Contact styles */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    text-align: center; /* Justify the text */
+    padding: 0 20px; /* Add padding to give some space on the sides */
+}
+
 .contact-methods {
     text-align: center;
 }
@@ -118,3 +152,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Additional styles can be added as needed */
+
+
+@media (max-width: 768px) {
+    header {
+        min-height: 50vh; /* Smaller screens might benefit from less header height */
+    }
+
+    header img {
+        max-width: 150px; /* Smaller profile photo on smaller screens */
+    }
+}

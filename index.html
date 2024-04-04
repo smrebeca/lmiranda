@@ -14,13 +14,13 @@
 <body>
 
     <!-- Header with background image and profile photo -->
-    <header style="background-image: url('images/ciclo_biodiversidade_LSM_cropped.jpg');">
-        <h1>Leonardo de Sousa Miranda</h1>
-        <p>Environmental Data Scientist | Biodiversity and Conservation Specialist</p>
+    <header>
+        <h1 class="name">Leonardo de Sousa Miranda</h1>
+        <p class="me">Environmental Data Scientist | Biodiversity and Conservation Specialist</p>
     </header>
 
     <!-- Navigation Menu -->
-    <nav>
+    <nav class="menu">
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#research">Research</a></li>
@@ -35,13 +35,15 @@
         <!-- About Me Section -->
         <section id="about">
             <h2>About Me</h2>
-            <img src="images/MirandaLphoto.jpg" alt="Leonardo de Sousa Miranda"  class="profile-photo">
+            <img src="./images/MirandaLphoto.jpg" alt="Leonardo de Sousa Miranda"  class="profile-photo">
             <!-- Add your biography and other details here -->
-            <p>
-                As an early career researcher with a passion for biodiversity, my journey has taken me through various dimensions of biodiversity, from population genetics to biogeography, and applied ecology. My commitment was recognised with the prestigious Ramboll Foundation Award 2023, a significant achievement that highlights my success in the field.<br><br>
-                During my first experience conducting a research project as an undergraduate, I led data acquisition and analysis on the genetic variability of endemic and threatened species, a crucial part of Brazil's Ministry of Environment action plan. This project marked the first inclusion of genetic variability in the nation's conservation planning. At the Museu Paraense Emilio Goeldi, I led projects evaluating the taxonomy of Amazonian birds, combining morphometric, acoustic and DNA methodologies, which resulted in the description of a new species that was published in a special volume of the Handbook of the Birds of the World. Throughout my postdoctoral roles, I used modelling techniques to spatialise biodiversity data, develop sustainability indicators, assess anthropogenic impacts, and identify priority areas for conservation and restoration. My findings have been published in high-impact journals like Conservation Biology and have directly influenced the offset, protection and restoration policies of a major Brazilian mining company, demonstrating the real-world impact of my research. I have also been at the forefront of modernising biodiversity data acquisition methods, recognising the need to keep pace with environmental changes. I am currently leading a project to establish protocols for monitoring environmental quality through passive acoustic monitoring, which demonstrates my commitment to innovative approaches.<br><br>
-                Over the past 13 years, I have cultivated a wide network of collaborators, spanning universities, research institutes, and environmental agencies mainly in Brazil and the UK. I have presented at national and international scientific meetings and conducted peer reviews for top scientific journals. These activities inspired me to become involved in interdisciplinary international projects, co-authorship in publications in several journals and expand my perspective and skills. I am committed to student engagement, supervision and teaching, having assisted or collaborated with 15 Masters and doctoral candidates and conducted 5 courses and training sessions for undergraduate and postgraduate students.<br><br>
-                For more details about my skills, publications, and engagement activities please access my <a href="www.linkedin.com/in/miralaba" target="_blank">LinkedIn profile</a> and my <a href="https://www.lancaster.ac.uk/lec/about-us/people/leonardo-de-sousa-de-sousa-miranda" target="_blank">Lancaster University page</a>.
+            <p>As an early career researcher with a passion for biodiversity, my journey has taken me through various dimensions of biodiversity, from population genetics to biogeography, and applied ecology. My commitment was recognised with the prestigious Ramboll Foundation Award 2023, a significant achievement that highlights my success in the field.</p>
+            
+            <p>During my first experience conducting a research project as an undergraduate, I led data acquisition and analysis on the genetic variability of endemic and threatened species, a crucial part of Brazil's Ministry of Environment action plan. This project marked the first inclusion of genetic variability in the nation's conservation planning. At the Museu Paraense Emilio Goeldi, I led projects evaluating the taxonomy of Amazonian birds, combining morphometric, acoustic and DNA methodologies, which resulted in the description of a new species that was published in a special volume of the Handbook of the Birds of the World. Throughout my postdoctoral roles, I used modelling techniques to spatialise biodiversity data, develop sustainability indicators, assess anthropogenic impacts, and identify priority areas for conservation and restoration. My findings have been published in high-impact journals like Conservation Biology and have directly influenced the offset, protection and restoration policies of a major Brazilian mining company, demonstrating the real-world impact of my research. I have also been at the forefront of modernising biodiversity data acquisition methods, recognising the need to keep pace with environmental changes. I am currently leading a project to establish protocols for monitoring environmental quality through passive acoustic monitoring, which demonstrates my commitment to innovative approaches.</p>
+            
+            <p>Over the past 13 years, I have cultivated a wide network of collaborators, spanning universities, research institutes, and environmental agencies mainly in Brazil and the UK. I have presented at national and international scientific meetings and conducted peer reviews for top scientific journals. These activities inspired me to become involved in interdisciplinary international projects, co-authorship in publications in several journals and expand my perspective and skills. I am committed to student engagement, supervision and teaching, having assisted or collaborated with 15 Masters and doctoral candidates and conducted 5 courses and training sessions for undergraduate and postgraduate students.</p>
+            
+            <p>For more details about my skills, publications, and engagement activities please access my <a href="www.linkedin.com/in/miralaba" target="_blank">LinkedIn profile</a> and my <a href="https://www.lancaster.ac.uk/lec/about-us/people/leonardo-de-sousa-de-sousa-miranda" target="_blank">Lancaster University page</a>.
             </p>
             </section>
 
@@ -55,6 +57,26 @@
         <section id="publications">
             <h2>Publications</h2>
             <!-- List your publications here -->
+            <nav class="publications">
+                <ul>
+                    <li>
+                        <strong>2021:</strong>
+                        <p>Esse arquivo trata-se de ...</p>
+                        <button class="pdf-view" data-url="./publications/1-s2.0-S0006320721002007-main.pdf">View PDF</button>
+                    </li>
+
+                    <li>
+                        <strong>2020:</strong>
+                        <p>Esse arquivo trata-se de ...</p>
+                        <button class="pdf-view" data-url="./publications/blaa193.pdf">View PDF</button>
+                    </li>
+                    <li>
+                        <strong>2019:</strong>
+                        <p>Esse arquivo trata-se de ...</p>
+                        <button class="pdf-view" data-url="./publications/document.pdf">View PDF</button>
+                    </li>
+                </ul>
+            </nav> 
         </section>
 
         <!-- Teaching Section -->

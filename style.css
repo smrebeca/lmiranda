@@ -1,10 +1,31 @@
 /* General styles and resets */
+
+:root {
+    --bg-header: url(./images/ciclo_biodiversidade_LSM_cropped.jpg);
+    --main-color: #ebd9c1;
+    --accent-color: #ead8c0;
+    --text-color: #333;
+}
+
 body {
+    background-color: var(--main-color);
     font-family: 'Montserrat', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
+.profile-photo {
+    max-width: 200px; /* Adjust the width as needed */
+    height: auto; /* This maintains the aspect ratio */
+    border-radius: 20%; /* Creates a circular profile photo */
+    border: 4px solid #fff; /* Optional: adds a white border around the photo */
+    margin-bottom: 20px; /* Spacing between the photo and the text */
 }
 
 img {
@@ -14,18 +35,24 @@ img {
 
 /* Header styles */
 header {
-    background: url('images/ciclo_biodiversidade_LSM_cropped.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
+    background: var(--bg-header) no-repeat center center/cover;
     min-height: 50vh; /* Adjust the min-height as needed */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    color: #fff;
+    color: #fcfcfc;
     padding: 20px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: right;
+}
+
+.name, .me {
+    color: white;
+    width: 100%;
+    max-width: 588px;
+    margin: 56px 50px 0px 550px;
+    padding: 0 24px;
 }
 
 /*header img {
@@ -37,7 +64,7 @@ header {
 /*}
 
 /* Navigation menu styles */
-nav ul {
+.menu ul {
     list-style-type: none;
     background: #333;
     text-align: center;
@@ -45,20 +72,56 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+.menu ul li {
     display: inline;
 }
 
-nav ul li a {
+.menu ul li a {
     text-decoration: none;
     color: white;
     padding: 15px 20px;
     display: inline-block;
 }
 
-nav ul li a:hover {
+.menu ul li a:hover {
     background-color: #ddd;
     color: black;
+}
+
+.publications ul li{
+    list-style-type: none;
+}
+
+/* Estilos para o botão de visualização de PDF */
+.pdf-view {
+    display: inline-block;
+    margin: 10px;
+    padding: 4px 12px;
+    border: 2px solid #333; /* Adicionando borda */
+    background-color: #fff; /* Cor de fundo branca */
+    color: #333; /* Cor do texto */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Suavizando a transição de cores */
+}
+
+.pdf-view:hover {
+    background-color: #333; /* Alterando a cor de fundo ao passar o mouse */
+    color: #fff; /* Alterando a cor do texto ao passar o mouse */
+}
+
+.pdf-view:focus {
+    outline: none;
+}
+
+.pdf-view:hover, .pdf-view:focus {
+    border-color: #fff; /* Alterando a cor da borda ao passar o mouse ou focar */
+}
+
+.pdf-view:hover {
+    cursor: pointer; /* Mudando o cursor para uma mão ao passar o mouse */
 }
 
 /* Main content styles */
@@ -71,20 +134,12 @@ section {
 }
 
 /* About Me Section styles, including the profile photo */
-#about {
+#about, #research, #publications, #contact {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the content */
     text-align: justify; /* Justify the text */
     padding: 0 20px; /* Add padding to give some space on the sides */
-}
-
-.profile-photo {
-    max-width: 200px; /* Adjust the width as needed */
-    height: auto; /* This maintains the aspect ratio */
-    border-radius: 20%; /* Creates a circular profile photo */
-    border: 4px solid #fff; /* Optional: adds a white border around the photo */
-    margin-bottom: 20px; /* Spacing between the photo and the text */
 }
 
 #about h2 {
@@ -137,29 +192,28 @@ footer {
 }
 
 /* Color scheme based on your image */
-:root {
-    --main-color: #ebd9c1;
-    --accent-color: #ead8c0;
-    --text-color: #333;
-}
-
-body {
-    background-color: var(--main-color);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--accent-color);
-}
 
 /* Additional styles can be added as needed */
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1250px) {
     header {
-        min-height: 50vh; /* Smaller screens might benefit from less header height */
+        min-height: 20vh; /* Smaller screens might benefit from less header height */
     }
 
-    header img {
-        max-width: 150px; /* Smaller profile photo on smaller screens */
+    .name, .me {
+        font-size: 18px;
+        max-width: 90%;
+        margin: auto 32px;
+        padding: 0 12px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    main {
+        display: block;
+        position: inherit;
     }
 }

@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
+/* p {
+    letter-spacing: -0.5px;
+} */
+
 .profile-photo {
     max-width: 200px; /* Adjust the width as needed */
     height: auto; /* This maintains the aspect ratio */
@@ -90,38 +94,22 @@ header {
 
 .publications ul li{
     list-style-type: none;
+    margin-bottom: 10px;
 }
 
-/* Estilos para o botão de visualização de PDF */
-.pdf-view {
+.publications ul li a {
     display: inline-block;
-    margin: 10px;
-    padding: 4px 12px;
-    border: 2px solid #333; /* Adicionando borda */
-    background-color: #fff; /* Cor de fundo branca */
-    color: #333; /* Cor do texto */
-    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    padding: 0 6px;
+    background-color: var(--accent-color);
+    color: blue;
+    text-decoration: underline;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Suavizando a transição de cores */
+    transition: background-color 0.3s ease;
 }
 
-.pdf-view:hover {
-    background-color: #333; /* Alterando a cor de fundo ao passar o mouse */
-    color: #fff; /* Alterando a cor do texto ao passar o mouse */
-}
-
-.pdf-view:focus {
-    outline: none;
-}
-
-.pdf-view:hover, .pdf-view:focus {
-    border-color: #fff; /* Alterando a cor da borda ao passar o mouse ou focar */
-}
-
-.pdf-view:hover {
-    cursor: pointer; /* Mudando o cursor para uma mão ao passar o mouse */
+.publications ul li a:hover {
+    background-color: grey;
 }
 
 /* Main content styles */
@@ -210,6 +198,7 @@ footer {
 
     p {
         font-size: 20px;
+        letter-spacing: -0.5px;
     }
 
     main {

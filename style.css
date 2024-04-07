@@ -121,6 +121,33 @@ section {
     margin-bottom: 20px;
 }
 
+.btn-mostrar-mais {
+    background-color: var(--accent-color);
+    color: #000;
+    font-size: 14px;
+    border: 1px solid #000;
+    margin: 10px 35px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-mostrar-mais:hover {
+    background-color: #007bff;
+}
+
+.projetos .projeto {
+    display: none;
+}
+
+.projetos .recente {
+    display: block;
+}
+
+
+
+
 /* About Me Section styles, including the profile photo */
 #about, #research, #publications, #contact {
     display: flex;
